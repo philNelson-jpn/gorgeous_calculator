@@ -1,5 +1,9 @@
 import Calculator from "./Calculator.js"
 
+const primaryOperandDisplay = document.querySelector("[data-primary-operand]")
+const secondaryOperandDisplay = document.querySelector("[data-secondary-operand]")
+const operationDisplay = document.querySelector("[data-operation]")
+
 // ACTIONS
 // 1. Click a number
 // 2. Click clear button
@@ -8,7 +12,7 @@ import Calculator from "./Calculator.js"
 // 5. Click the period button
 // 6. Click equals
 
-const calculator = new Calculator()
+const calculator = new Calculator(primaryOperandDisplay, secondaryOperandDisplay, operationDisplay)
 
 document.addEventListener("click", e => {
     if (e.target.matches('[data-all-clear]')){

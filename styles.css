@@ -30,6 +30,7 @@
     border: 2px solid hsla(0, 0%, 100%, 0.75);
     outline: none;
     background-color: hsla(0, 0%, 100%, 0.75);
+    color: hsl(232, 58%, 16%);
   }
   
   .calculator-grid > button:hover {
@@ -40,6 +41,11 @@
   .span-two {
     grid-column: span 2;
   }
+
+  .unicode{
+      filter: contrast(150%);
+  }
+
   
   .output {
     grid-column: 1 / -1;
